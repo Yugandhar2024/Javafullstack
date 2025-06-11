@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        div {
+            background-image: url("https://media.istockphoto.com/id/1449439739/vector/vector-seamless-pattern-with-concentric-circles-geometric-abstract-background.jpg?s=2048x2048&w=is&k=20&c=oEg4mI-dqKczQkj1VmjIpH3os2cJicRzypCStOD1LZo=");           background-size: contain;
+            border: solid;
+            border-color: rgb(8, 12, 1);
+            border-style:dotted;
+            margin:30px;
+            width:400px;
+            padding-block: 30px;
+        }
+    </style>
+    <style>
+        body{
+            background-color: rgba(173, 177, 180, 0.568);
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+    
+    <h1 style="color:rgb(213, 13, 13)"><u>SIMPLE CALCULATOR</u></h1>
+    <br>
+    <input type="number" id="r" placeholder="Enter the first number:"/>
+    <input type="number" id="f" placeholder="Enter the second number:"/></br>
+    <button onclick="add()" style="background-color: rgb(162,216,107);">Add</button>
+    <button onclick="sub()" style="background-color: rgb(47, 160, 45);">Sub</button>
+    <button onclick="mul()" style="background-color:rgb(216, 107, 121)">Mul</button>
+    <button onclick="div()" style="background-color: rgb(160, 45, 127);">Div</button>
+    <button onclick="Modulodiv()" style="background-color: rgb(117, 81, 139);">Modulodiv</button>
+    <h1 id="display" style="color:rgb(216, 107, 121)" ></h1>
+    
+    </div>
+    </center>
+</body>
+<script>
+    function add(){
+            let a=Number(document.getElementById("r").value);
+            let b=Number(document.getElementById("f").value);
+            document.getElementById("display").innerHTML=a+b;
+    }
+        function sub(){
+            let a=Number(document.getElementById("r").value);
+            let b=Number(document.getElementById("f").value);
+            document.getElementById("display").innerHTML=a-b;
+        }
+            function mul(){
+            let a=Number(document.getElementById("r").value);
+            let b=Number(document.getElementById("f").value);
+            document.getElementById("display").innerHTML=a*b;
+            }
+            function div() {
+            let a=Number(document.getElementById("r").value);
+            let b=Number(document.getElementById("f").value);
+            document.getElementById("display").innerHTML=a/b;
+            }
+            function Modulodiv() {
+            let a=Number(document.getElementById("r").value);
+            let b=Number(document.getElementById("f").value);
+            document.getElementById("display").innerHTML=a%b;
+            }
+</script>
+</html>
