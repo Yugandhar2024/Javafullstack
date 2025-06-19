@@ -1,8 +1,9 @@
-import java.util.Scanner;
+
 
 /* Number1 */
 
-/*class Pattern1
+/*import java.util.Scanner;
+class Pattern1
 {
 public static void main(String[] args)
 {
