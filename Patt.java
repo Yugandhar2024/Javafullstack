@@ -388,7 +388,7 @@ public static void main(String[] args)
 *       *
 */
 
-class Patt
+/*class Patt
 {
 public static void main(String[] args)
 	{
@@ -407,7 +407,7 @@ public static void main(String[] args)
 					
 	}
 }
-
+*/
 /* Print the Pattern-15.
 * * * * *
 *       *
@@ -415,3 +415,390 @@ public static void main(String[] args)
 *       *
 *       *
 */
+/*
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=5,star=0; //Firstly the 0th row the stars is zero so we intialized.
+	for(int i=1 ; i<=n ; i++)
+	{
+		star++; //Star is to inc for match the 1st row and corresponding rows.
+		for(int j=1 ; j<=star ; j++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/* Expected output.Pattern-16.
+*
+* *
+* * *
+* * * *
+* * * * *
+*/
+/*
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=7,star=n+1; //Firstly the 0th row the star is n+1 so we intialized.
+	for(int i=1 ; i<=n ; i++)
+	{
+		star--; //Star is to dec for match the 1st row and corresponding rows.
+		for(int j=1 ; j<=star ; j++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/* Expected output.Pattern-17.
+* * * * * * *
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+*/
+/*
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=7,star=0,space=n; //Firstly the 0th row the star is 0 and space is n so we intialized.
+	for(int i=1 ; i<=n ; i++)
+	{
+		star++; //Star is to Inc for match the 1st row and correspondig rows.
+		space--; //Space is to Dec for match the 1st row and corresponding rows.
+		for(int j=1 ; j<=space ; j++)
+		{
+			System.out.print("  "); 
+		}
+		for(int k=1 ; k<=star ; k++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/* Expected Output.Pattern-18.
+            *
+          * *
+        * * *
+      * * * *
+    * * * * *
+  * * * * * *
+* * * * * * *
+*/
+/*class Patt
+{
+public static void main(String[] args)
+{
+	int n=7,star=n+1,space=-1; //Firstly the 0th row the star is n+1 and space is -1 is so we intialized.
+	for(int i=1 ; i<=n ; i++)
+	{
+		star--; //Star is to Dec for match the 1st row and correspondig rows.
+		space++; //Space is to Inc for match the 1st row and corresponding rows.
+		for(int j=1 ; j<=space ; j++)
+		{
+			System.out.print("  "); 
+		}
+		for(int k=1 ; k<=star ; k++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/* Expected Output.Pattern-19.
+* * * * * * *
+  * * * * * *
+    * * * * *
+      * * * *
+        * * *
+          * *
+            *
+*/
+/*
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=7,star=-1,space=n; //Firstly the 0th row the star is -1 and space is n is so we intialized.
+	for(int i=1 ; i<=n ; i++)
+	{
+		star+=2; //Star is to Inc '2' for match the 1st row and correspondig rows.
+		space--; //Space is to Dec for match the 1st row and corresponding rows.
+		for(int j=1 ; j<=space ; j++)
+		{
+			System.out.print("  "); 
+		}
+		for(int k=1 ; k<=star ; k++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/*Expected Output.Pattern-20.
+            *
+          * * *
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
+  * * * * * * * * * * *
+* * * * * * * * * * * * *
+*/
+/*
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=7,star=n+2,space=-1; //Firstly the 0th row the star is n+2 and space is -1 is so we intialized.
+	for(int i=1 ; i<=n ; i++)
+	{
+		star-=2; //Star is to Dec '2' for match the 1st row and correspondig rows.
+		space++; //Space is to Inc for match the 1st row and corresponding rows.
+		for(int j=1 ; j<=space ; j++)
+		{
+			System.out.print("  "); 
+		}
+		for(int k=1 ; k<=star ; k++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/* Expected Output.Pattern-21.
+* * * * * * *
+  * * * * *
+    * * *
+      *
+*/
+/*
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=7,star=0,space=n/2+1; 
+	for(int i=1 ; i<=n ; i++)
+	{
+		if(i<=n/2+1)
+		{
+			space--;
+			star++;
+		} 
+		else
+		{	space++;
+			star--;
+		}
+		for(int j=1 ; j<=star ; j++)
+			{
+				System.out.print("* "); 
+			}
+		for(int k=1 ; k<=space ; k++)
+			{
+				System.out.print(" "); 
+			}
+
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/*Expected Output.Pattern-22.
+*
+* *
+* * *
+* * * *
+* * *
+* *
+*
+*/
+/*class Patt
+{
+    public static void main(String[] args)
+    {
+        int n = 7, star = 0, space = n/2 + 1;
+
+        for(int i = 1; i <= n; i++)
+        {
+            if(i <= n/2 + 1)
+            {
+                space--;
+                star++;
+            }
+            else
+            {
+                space++;
+                star--;
+            }
+
+            for(int j = 1; j <= space; j++)
+            {
+                System.out.print("  ");
+            }
+
+            for(int k = 1; k <= star; k++)
+            {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+    }
+}
+*/
+/*Expected output.Pattern-23.
+     *
+    * *
+  * * *
+* * * *
+  * * *
+    * *
+      *
+*/
+/*
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=7,space=n/2+1,star=-1;
+	for(int i=1 ; i<=n ; i++)
+	{
+		if(i<=n/2+1)
+		{
+			star+=2; 
+			space--;
+		}
+		else
+		{
+			star-=2; 
+			space++;
+		}
+
+		for(int j=1 ; j<=space ; j++)
+		{
+			System.out.print("  "); 
+		}
+		for(int k=1 ; k<=star ; k++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/*Expected Output.Pattern-24.
+      *
+    * * *
+  * * * * *
+* * * * * * *
+  * * * * *
+    * * *
+      *
+*/
+/*
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=7,star=n+2,space=-1; //Firstly the 0th row the star is n+2 and space is -1 is so we intialized.
+	for(int i=1 ; i<=n ; i++)
+	{
+		if(i<=n/2+1)
+		{
+			star-=2; 
+			space++; 
+		}
+		else
+		{
+			star+=2; 
+			space--; 
+		}
+
+		for(int j=1 ; j<=space ; j++)
+		{
+			System.out.print("  "); 
+		}
+		for(int k=1 ; k<=star ; k++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+*/
+/*Expected Output.Pattern-25.
+* * * * * * *
+  * * * * *
+    * * *
+      *
+    * * *
+  * * * * *
+* * * * * * *
+*/
+class Patt
+{
+public static void main(String[] args)
+{
+	int n=11,star=0,space=n; 
+	for(int i=1 ; i<=n ; i++)
+	{
+		if(i<=n/2+1)
+		{
+			space-=2; 
+			star++; 
+		}
+		else
+		{
+			space+=2; 
+			star--; 
+		}
+
+		for(int j=1 ; j<=star ; j++)
+		{
+			System.out.print("* "); 
+		}
+		for(int k=1 ; k<=space ; k++)
+		{
+			System.out.print("  ");
+		}
+		for(int l=1;l<=star;l++)
+		{
+			if(i==(n/2)+1 && l==1)
+				continue;
+				System.out.print("* ");
+		}
+		System.out.println(); //To move to next row.
+	}
+}
+}
+/* Expected output.Pattern-26.
+*           *
+* *       * *
+* * *   * * *
+* * * * * * *
+* * *   * * *
+* *       * *
+*           *
+*/
+
